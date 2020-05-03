@@ -116,11 +116,3 @@ class CovidCasesRaw(object):
             return {"status": True, "cases": state_result}
         except Exception as e:
             return {"status": False, "cases": None, "err": str(e)}
-
-
-if __name__ == "__main__":
-    # c = CovidCasesRaw()
-    # c.list_state_cases(state='sp')
-    # c.format_dataframe()
-    # c.save_raw_cases()
-    # c.format_cases()
