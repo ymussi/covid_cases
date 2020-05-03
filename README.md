@@ -6,4 +6,4 @@
 
 - https://covid-cases-br.herokuapp.com/cases/list-cases/{city}
 
-- OBS: this url -> https://covid-cases-br.herokuapp.com/cases/list-cases/ return cases of the "São Paulo"
+- OBS: this url -> https://covid-cases-br.herokuapp.com/cases/list-cases return cases of the "São Paulo"
