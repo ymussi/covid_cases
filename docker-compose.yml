@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  web:
+    build:
+        context: .
+        args: 
+            RUN_ENVIRONMENT: development
+    working_dir: /app/covid
+    entrypoint: "uwsgi --ini /app/covid/app.ini"
+    volumes:
+        - .:/app/covid
+    ports:
+        - "5000:5000"

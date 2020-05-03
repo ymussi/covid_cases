@@ -1,0 +1,12 @@
+pandas
+pymysql==0.9.3
+sqlalchemy
+Flask==0.12.2
+Flask-Cors==3.0.7
+flask_restplus
+flask-sqlalchemy==2.4.1
+configparser==3.5.0
+requests==2.20.0
+werkzeug==0.16.1
+schedule==0.6.0
+uwsgi
