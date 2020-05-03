@@ -15,7 +15,8 @@ class GetCases(Resource):
         Searches covid19 case records in Brazil and saves the raw data in a database.
         """
         c = CovidCasesRaw()
-        resp = c.save_cases()
+        resp = c.save_raw_cases()
+        c.save_cases_formated()
 
         return resp
 
