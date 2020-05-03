@@ -9,9 +9,15 @@ The data are saved raw in a relational database.
 
 # To search cases of the specific city:
 
-- https://covid-cases-br.herokuapp.com/cases/list-cases/{city}
+- https://covid-cases-br.herokuapp.com/cases/city-cases/{city}
 
-- OBS: this url -> https://covid-cases-br.herokuapp.com/cases/list-cases return cases of the "São Paulo"
+- OBS: this url -> https://covid-cases-br.herokuapp.com/cases/city-cases return cases of the "São Paulo"
+
+# To search cases of the specific state:
+
+- https://covid-cases-br.herokuapp.com/cases/state-cases/{UF}
+
+- OBS: this url -> https://covid-cases-br.herokuapp.com/cases/state-cases return cases of the "SP"
 
 
 # TODO

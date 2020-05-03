@@ -19,15 +19,28 @@ class GetCases(Resource):
 
         return resp
 
-@ns.route('/list-cases')
-@ns.route('/list-cases/<string:city>')
+@ns.route('/city-cases')
+@ns.route('/city-cases/<string:city>')
 class ListCases(Resource):
     @ns.response(code=400, description='Bas Request')
     def get(self, city="São Paulo"):
         """
-        List cases by city.
+        Returns cases of covid19 in a specific city.
         """
         c = CovidCasesRaw()
-        resp = c.list_cases(city)
+        resp = c.list_city_cases(city)
+
+        return resp
+
+@ns.route('/state-cases')
+@ns.route('/state-cases/<string:state>')
+class StateCases(Resource):
+    @ns.response(code=400, description='Bas Request')
+    def get(self, state="SP"):
+        """
+        Returns cases of covid19 in a specific state.
+        """
+        c = CovidCasesRaw()
+        resp = c.list_state_cases(state)
 
         return resp
