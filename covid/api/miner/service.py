@@ -23,6 +23,8 @@ class GetCovidCasesRaw:
 
         self.cases = rawData
 
+class SaveCovidCases:
+
     def save_raw_cases(self):
         """
         Save the data from our database.
@@ -44,9 +46,9 @@ class GetCovidCasesRaw:
                 "msg": "error in saving the records.",
                 "err": str(e)
             }
-    
-    def save_cases_formated(self):
-        try:
+
+        def save_cases_formated(self):
+            try:
             
             return {"status": True, "msg": "All records have been successfully updated and saved."}
         except Exception as e:
@@ -55,6 +57,8 @@ class GetCovidCasesRaw:
                 "msg": "error in saving the records.",
                 "err": str(e)
             }
+
+class CovidCases:
 
     def list_city_cases(self, city):
         """
@@ -75,12 +79,3 @@ class GetCovidCasesRaw:
             return {"status": True, "cases": state_result}
         except Exception as e:
             return {"status": False, "cases": None, "err": str(e)}
-
-class FormatDfCases:
-    pass
-
-class SaveCovidCases:
-    pass
-
-class CovidCases:
-    pass
