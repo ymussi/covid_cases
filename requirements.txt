@@ -2,7 +2,7 @@ pandas
 pymysql==0.9.3
 sqlalchemy
 Flask==0.12.2
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 flask_restplus
 flask-sqlalchemy==2.4.1
 configparser==3.5.0
